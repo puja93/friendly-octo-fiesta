@@ -1,0 +1,12 @@
+Peta Migas 
+
+
+Non Konvensional
+Layer info: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer/0?f=json
+Data: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer/0/query?where=1=1&outFields=*&f=geojson
+
+
+Konvensional
+Layer info: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer/0?f=json
+Data: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer/0/query?where=1=1&outFields=*&f=geojson
+

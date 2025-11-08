@@ -1,0 +1,19 @@
+{
+  "name": "esdmap",
+  "version": "1.0.0",
+  "description": "Indonesia Migas Working Areas Map",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": ["map", "leaflet", "indonesia", "migas"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

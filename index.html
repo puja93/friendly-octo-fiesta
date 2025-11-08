@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesia Migas Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Indonesia Migas Working Areas</h1>
+            <div class="controls">
+                <button id="refreshBtn" class="btn">Refresh Data</button>
+                <div id="lastUpdated" class="last-updated"></div>
+            </div>
+        </header>
+        <div id="map"></div>
+        <div class="legend">
+            <div class="legend-title">Status</div>
+            <div class="legend-item">
+                <span class="legend-color exploration"></span>
+                <span>Exploration</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color development"></span>
+                <span>Development</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color production"></span>
+                <span>Production</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
