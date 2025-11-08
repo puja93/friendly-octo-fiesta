@@ -8,6 +8,11 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname)));
 
+// Health check endpoint for Render
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // API endpoint to get Mapbox token
 app.get('/api/config', (req, res) => {
   res.json({
