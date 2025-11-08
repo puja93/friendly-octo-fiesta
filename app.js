@@ -39,17 +39,17 @@ async function initMap() {
 
         mapboxgl.accessToken = accessToken;
 
-    map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [INDONESIA_CENTER[1], INDONESIA_CENTER[0]], // Mapbox uses [lng, lat]
-        zoom: INITIAL_ZOOM,
-        pitch: 0,
-        bearing: 0
-    });
+        map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [INDONESIA_CENTER[1], INDONESIA_CENTER[0]], // Mapbox uses [lng, lat]
+            zoom: INITIAL_ZOOM,
+            pitch: 0,
+            bearing: 0
+        });
 
-    // Add navigation controls
-    map.addControl(new mapboxgl.NavigationControl());
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl());
 
         // Wait for map to load before adding layers
         map.on('load', () => {
