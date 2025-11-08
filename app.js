@@ -27,17 +27,8 @@ let geoJsonLayers = {
  */
 async function initMap() {
     try {
-        // Fetch Mapbox token from server
-        const response = await fetch('/api/config');
-        const config = await response.json();
-        const accessToken = config.mapboxToken;
-
-        if (!accessToken) {
-            alert('Mapbox access token is not configured. Please set MAPBOX_ACCESS_TOKEN in your .env file.');
-            return;
-        }
-
-        mapboxgl.accessToken = accessToken;
+        // Set Mapbox access token
+        mapboxgl.accessToken = 'pk.eyJ1IjoicHVqYTkzIiwiYSI6ImNtaHFsNzgxdTBzMm8ybHIxODA0djE5eXUifQ.UietOmI0-h8waYOoAsqOLQ';
 
         map = new mapboxgl.Map({
             container: 'map',
