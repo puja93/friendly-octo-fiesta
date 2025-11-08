@@ -23,16 +23,42 @@ let geoJsonLayers = {
 };
 
 /**
- * Initialize the map
+ * Initialize the map with Mapbox
  */
-function initMap() {
-    map = L.map('map').setView(INDONESIA_CENTER, INITIAL_ZOOM);
+async function initMap() {
+    try {
+        // Fetch Mapbox token from server
+        const response = await fetch('/api/config');
+        const config = await response.json();
+        const accessToken = config.mapboxToken;
 
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-        maxZoom: 19
-    }).addTo(map);
+        if (!accessToken) {
+            alert('Mapbox access token is not configured. Please set MAPBOX_ACCESS_TOKEN in your .env file.');
+            return;
+        }
+
+        mapboxgl.accessToken = accessToken;
+
+    map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [INDONESIA_CENTER[1], INDONESIA_CENTER[0]], // Mapbox uses [lng, lat]
+        zoom: INITIAL_ZOOM,
+        pitch: 0,
+        bearing: 0
+    });
+
+    // Add navigation controls
+    map.addControl(new mapboxgl.NavigationControl());
+
+        // Wait for map to load before adding layers
+        map.on('load', () => {
+            loadAllData();
+        });
+    } catch (error) {
+        console.error('Error initializing map:', error);
+        alert('Failed to initialize map. Check console for details.');
+    }
 }
 
 /**
@@ -143,50 +169,101 @@ function createPopupContent(feature, source) {
 }
 
 /**
- * Add GeoJSON layer to map
+ * Add GeoJSON layer to map using Mapbox
  */
 function addGeoJsonLayer(source, geojsonData) {
-    // Remove existing layer if any
-    if (geoJsonLayers[source]) {
-        map.removeLayer(geoJsonLayers[source]);
+    const layerId = `${source}-fill`;
+    const lineLayerId = `${source}-line`;
+
+    // Remove existing layers if any
+    if (map.getLayer(layerId)) {
+        map.removeLayer(layerId);
+    }
+    if (map.getLayer(lineLayerId)) {
+        map.removeLayer(lineLayerId);
+    }
+    if (map.getSource(source)) {
+        map.removeSource(source);
     }
 
-    const layer = L.geoJSON(geojsonData, {
-        style: (feature) => getFeatureStyle(feature),
-        onEachFeature: (feature, layer) => {
-            const popupContent = createPopupContent(feature, source);
-            layer.bindPopup(popupContent);
+    // Add source
+    map.addSource(source, {
+        type: 'geojson',
+        data: geojsonData
+    });
+
+    // Add fill layer
+    map.addLayer({
+        id: layerId,
+        type: 'fill',
+        source: source,
+        paint: {
+            'fill-color': [
+                'match',
+                ['get', 'status'],
+                'EXPLORATION', '#FFD700',
+                'DEVELOPMENT', '#ff6b6b',
+                'PRODUCTION', '#3388ff',
+                '#888888'
+            ],
+            'fill-opacity': [
+                'match',
+                ['get', 'status'],
+                'EXPLORATION', 0.7,
+                'DEVELOPMENT', 0.55,
+                'PRODUCTION', 0.55,
+                0.4
+            ]
         }
     });
 
-    layer.addTo(map);
-    geoJsonLayers[source] = layer;
+    // Add line layer (border)
+    map.addLayer({
+        id: lineLayerId,
+        type: 'line',
+        source: source,
+        paint: {
+            'line-color': [
+                'match',
+                ['get', 'status'],
+                'EXPLORATION', '#FFD700',
+                'DEVELOPMENT', '#ff6b6b',
+                'PRODUCTION', '#3388ff',
+                '#888888'
+            ],
+            'line-width': 2,
+            'line-opacity': 0.8
+        }
+    });
+
+    // Add click event to show popup
+    map.on('click', layerId, (e) => {
+        const feature = e.features[0];
+        const popupContent = createPopupContent(feature, source);
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(popupContent)
+            .addTo(map);
+    });
+
+    // Change cursor on hover
+    map.on('mouseenter', layerId, () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', layerId, () => {
+        map.getCanvas().style.cursor = '';
+    });
+
+    geoJsonLayers[source] = true;
 }
 
-/**
- * Update the last updated timestamp display
- */
-function updateLastUpdatedTime() {
-    const date = new Date();
-    const formattedDate = date.toLocaleString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-    });
-    document.getElementById('lastUpdated').textContent = `Loaded: ${formattedDate}`;
-}
 
 /**
  * Load all data and display on map
  */
 async function loadAllData() {
-    const refreshBtn = document.getElementById('refreshBtn');
-    refreshBtn.disabled = true;
-    refreshBtn.classList.add('loading');
-    refreshBtn.textContent = 'Loading...';
-
     try {
         // Fetch both data sources in parallel
         const [konvensionalData, nonKonvensionalData] = await Promise.all([
@@ -202,10 +279,6 @@ async function loadAllData() {
     } catch (error) {
         console.error('Error loading data:', error);
         alert('Error loading map data. Please try again.');
-    } finally {
-        refreshBtn.disabled = false;
-        refreshBtn.classList.remove('loading');
-        refreshBtn.textContent = 'Refresh Data';
     }
 }
 
@@ -214,16 +287,7 @@ async function loadAllData() {
  */
 function init() {
     initMap();
-    loadAllData();
-
-    // Add refresh button event listener
-    document.getElementById('refreshBtn').addEventListener('click', () => {
-        // Reload data from local files
-        loadAllData();
-    });
-
-    // Update last updated time on page load
-    updateLastUpdatedTime();
+    // loadAllData() is called inside initMap() after map loads
 }
 
 // Start the application when DOM is ready
