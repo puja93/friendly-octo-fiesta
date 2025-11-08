@@ -2,6 +2,10 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
+console.log('Server starting...');
+console.log('Environment:', process.env.NODE_ENV || 'development');
+console.log('Mapbox token exists:', !!process.env.MAPBOX_ACCESS_TOKEN);
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -12,8 +16,11 @@ app.get('/health', (req, res) => {
 
 // API endpoint to get Mapbox token (MUST be before static files)
 app.get('/api/config', (req, res) => {
+  console.log('📡 /api/config endpoint called');
+  const token = process.env.MAPBOX_ACCESS_TOKEN || '';
+  console.log('📡 Returning token:', token ? 'token exists (length: ' + token.length + ')' : 'empty token');
   res.json({
-    mapboxToken: process.env.MAPBOX_ACCESS_TOKEN || ''
+    mapboxToken: token
   });
 });
 
@@ -26,6 +33,9 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-  console.log(`Mapbox token configured: ${process.env.MAPBOX_ACCESS_TOKEN ? 'Yes' : 'No'}`);
+  console.log(`✓ Server is running on port ${PORT}`);
+  console.log(`✓ Mapbox token configured: ${process.env.MAPBOX_ACCESS_TOKEN ? 'Yes' : 'No'}`);
+  if (!process.env.MAPBOX_ACCESS_TOKEN) {
+    console.warn('⚠ WARNING: MAPBOX_ACCESS_TOKEN is not set!');
+  }
 });
