@@ -27,6 +27,9 @@ app.get('/api/config', (req, res) => {
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname)));
 
+// Serve node_modules for Mapbox GL
+app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
+
 // Fallback to index.html for SPA routing (catch-all must be last)
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
