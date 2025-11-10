@@ -2,49 +2,84 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-// Files to retry (excluding "No layers found" errors)
+// Files to retry - ALL missing/failed sources (12 total)
 const retryList = [
+  // Energi Terbarukan (3 missing)
   {
-    url: 'https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer',
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer',
     category: 'Energi Terbarukan',
-    layerId: 0,
-    layerName: 'Potensi Surya di Lahan Permukiman TanahTerbuka Savana'
+    layerId: null,
+    layerName: null
   },
   {
     url: 'https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer',
     category: 'Energi Terbarukan',
-    layerId: 0,
-    layerName: 'Potensi Biogas'
-  },
-  {
-    url: 'https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer',
-    category: 'Energi Terbarukan',
-    layerId: 0,
-    layerName: 'Potensi_Angin'
+    layerId: null,
+    layerName: null
   },
   {
     url: 'https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer',
     category: 'Energi Terbarukan',
-    layerId: null, // Need to fetch layer info
+    layerId: null,
+    layerName: null
+  },
+  // Mineral & Batubara (4 missing)
+  {
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer',
+    category: 'Mineral & Batubara',
+    layerId: null,
     layerName: null
   },
   {
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer',
+    category: 'Mineral & Batubara',
+    layerId: null,
+    layerName: null
+  },
+  {
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer',
+    category: 'Mineral & Batubara',
+    layerId: null,
+    layerName: null
+  },
+  {
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer',
+    category: 'Mineral & Batubara',
+    layerId: null,
+    layerName: null
+  },
+  // Minyak & Gas Bumi (3 failed/missing)
+  {
+    url: 'https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer',
+    category: 'Minyak & Gas Bumi',
+    layerId: null,
+    layerName: null
+  },
+  {
+    url: 'https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LNG/MapServer',
+    category: 'Minyak & Gas Bumi',
+    layerId: null,
+    layerName: null
+  },
+  {
+    url: 'https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LPG/MapServer',
+    category: 'Minyak & Gas Bumi',
+    layerId: null,
+    layerName: null
+  },
+  // Ketenagalistrikan (1 missing)
+  {
     url: 'https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer',
     category: 'Ketenagalistrikan',
-    layerId: 0,
-    layerName: 'Rasio Elektrifikasi Tahun 2024'
+    layerId: null,
+    layerName: null
   },
+  // Batas Wilayah (1 missing)
   {
     url: 'https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer',
     category: 'Batas Wilayah',
-    layerId: 0,
-    layerName: 'Batas Administrasi Provinsi'
-  },
-  {
-    url: 'https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer',
-    category: 'Batas Wilayah',
-    layerId: 1,
-    layerName: 'Batas Administrasi Kabupaten/Kota'
+    layerId: null,
+    layerName: null
   }
 ];
 
@@ -61,6 +96,8 @@ const results = {
 const dataDir = '/Users/pujaromulus/Code/esdmap/data';
 const categoryFolders = {
   'Energi Terbarukan': 'energi_terbarukan',
+  'Mineral & Batubara': 'mineral_batubara',
+  'Minyak & Gas Bumi': 'minyak_gas_bumi',
   'Ketenagalistrikan': 'ketenagalistrikan',
   'Batas Wilayah': 'batas_wilayah'
 };
@@ -110,16 +147,16 @@ async function fetchLayerInfo(url) {
 
 // Download GeoJSON with retry capability
 async function downloadGeoJSON(url, layerId, layerName, category, retryCount = 0) {
-  const maxRetries = 2;
+  const maxRetries = 1;
   const downloadUrl = `${url}/${layerId}/query?where=1%3D1&outFields=*&f=geojson`;
 
   try {
     console.log(`\nDownloading: ${layerName} (Layer ${layerId})`);
     console.log(`URL: ${downloadUrl}`);
-    console.log(`Timeout: 5 minutes (300000ms)`);
+    console.log(`Timeout: 1 minute (60000ms)`);
 
     const response = await axios.get(downloadUrl, {
-      timeout: 300000, // 5 minutes
+      timeout: 60000, // 1 minute
       maxContentLength: Infinity,
       maxBodyLength: Infinity,
       headers: {

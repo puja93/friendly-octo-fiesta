@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-11-10T14:59:03.429Z",
+  "totalRetries": 12,
+  "successCount": 2,
+  "failureCount": 10,
+  "successful": [
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LNG/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "layerId": 0,
+      "layerName": "Terminal LNG",
+      "filename": "dmos_terminal_lng_terminal_lng_layer0.geojson",
+      "filepath": "/Users/pujaromulus/Code/esdmap/data/minyak_gas_bumi/dmos_terminal_lng_terminal_lng_layer0.geojson",
+      "size": 98
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LPG/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "layerId": 0,
+      "layerName": "Terminal LPG",
+      "filename": "dmos_terminal_lpg_terminal_lpg_layer0.geojson",
+      "filepath": "/Users/pujaromulus/Code/esdmap/data/minyak_gas_bumi/dmos_terminal_lpg_terminal_lpg_layer0.geojson",
+      "size": 98
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer",
+      "category": "Energi Terbarukan",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "error": "No layers found"
+    }
+  ]
+}

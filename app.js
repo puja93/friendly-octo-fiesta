@@ -2,12 +2,12 @@
 const DATA_SOURCES = {
     konvensional: {
         name: 'Konvensional',
-        dataFile: 'data_konvensional.geojson',
+        dataFile: 'data/minyak_gas_bumi/dmew_wilayah_kerja_migas_konvensional_wilayah_kerja_migas_konvensional_layer0.geojson',
         color: '#3388ff'
     },
     nonKonvensional: {
         name: 'Non Konvensional',
-        dataFile: 'data_non_konvensional.geojson',
+        dataFile: 'data/minyak_gas_bumi/dmew_wilayah_kerja_migas_non_konvensional_wilayah_kerja_migas_non_konvensional_layer0.geojson',
         color: '#ff6b6b'
     }
 };

@@ -3,3 +3,12 @@ node_modules/
 *.log
 .env
 .claude*
+
+# Large data files (>50MB)
+data/batas_wilayah/batas_administrasi_kabupaten_kota.geojson
+data/batas_wilayah/batas_administrasi_provinsi.geojson
+data/energi_terbarukan/potensi_biomassa.geojson
+data/energi_terbarukan/potensi_biogas.geojson
+data/ketenagalistrikan/rasio_elektrifikasi_2024.geojson
+tmp_*/
+tmp/
