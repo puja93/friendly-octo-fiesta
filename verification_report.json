@@ -1,0 +1,303 @@
+{
+  "timestamp": "2025-11-10T09:47:04.274Z",
+  "totalMapServers": 42,
+  "checkedLayers": 0,
+  "existingFiles": 0,
+  "missingFiles": 42,
+  "details": [
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan_dan_Eksplorasi/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Kerja_Panas_Bumi/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Energi_Arus_Laut_Indonesia/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Hidro/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_PLTS_Terapung/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer",
+      "category": "Energi Terbarukan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Mineral_Laut/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/monaresia/sharing/servers/1d19dc2faa1a42ebacbe9d76d70ac110/rest/services/Pusat/WilayahPertambangan/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/monaresia/sharing/servers/48852a855c014a63acfd78bf06c2689a/rest/services/Pusat/WIUP_Publish/MapServer",
+      "category": "Mineral & Batubara",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_Minyak/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Infrastruktur_Pipa_Transmisi_Gas_Bumi/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Cadangan_Migas/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Jaringan_Gas_Rumah_Tangga/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LNG_Hilir/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Kilang_LNG_Hulu/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LNG/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_CNG/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LPG__Hilir_/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LPG/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Jaringan_Listrik/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Pembangkit_Listrik/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/PLTP/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Lokasi_Gardu_Induk/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTS_Under_10_Mega_Watt/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Pembangkit_Berbasis_Bioenergi/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/Pembangkit_Offgrid_APBN/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTM_PLTMH_Under_10_Mega_Watt/MapServer",
+      "category": "Ketenagalistrikan",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "category": "Batas Wilayah",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Laut_Indonesia/MapServer",
+      "category": "Batas Wilayah",
+      "status": "error",
+      "error": "getaddrinfo EAI_AGAIN geoportal.esdm.go.id",
+      "layers": []
+    }
+  ]
+}
