@@ -1,12 +1,54 @@
-Peta Migas 
+#Energi Terbarukan
+https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan_dan_Eksplorasi/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Kerja_Panas_Bumi/MapServer
+https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Energi_Arus_Laut_Indonesia/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Hidro/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_PLTS_Terapung/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer
 
 
-Non Konvensional
-Layer info: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer/0?f=json
-Data: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer/0/query?where=1=1&outFields=*&f=geojson
+#Mineral & Batubara
+https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer
+https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer
+https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer
+https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Mineral_Laut/MapServer
+https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer
+https://geoportal.esdm.go.id/monaresia/sharing/servers/1d19dc2faa1a42ebacbe9d76d70ac110/rest/services/Pusat/WilayahPertambangan/MapServer
+https://geoportal.esdm.go.id/monaresia/sharing/servers/48852a855c014a63acfd78bf06c2689a/rest/services/Pusat/WIUP_Publish/MapServer
 
 
-Konvensional
-Layer info: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer/0?f=json
-Data: https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer/0/query?where=1=1&outFields=*&f=geojson
+#Minyak & Gas Bumi
+https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_Minyak/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Infrastruktur_Pipa_Transmisi_Gas_Bumi/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Cadangan_Migas/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Jaringan_Gas_Rumah_Tangga/MapServer
+https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LNG_Hilir/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Kilang_LNG_Hulu/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LNG/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_CNG/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LPG__Hilir_/MapServer
+https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LPG/MapServer
 
+
+#Ketenagalistrikan
+https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Jaringan_Listrik/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Pembangkit_Listrik/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DPP/PLTP/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Lokasi_Gardu_Induk/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTS_Under_10_Mega_Watt/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DBP/Pembangkit_Berbasis_Bioenergi/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DAP/Pembangkit_Offgrid_APBN/MapServer
+https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTM_PLTMH_Under_10_Mega_Watt/MapServer
+
+#Batas Wilayah
+https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer
+https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Laut_Indonesia/MapServer
