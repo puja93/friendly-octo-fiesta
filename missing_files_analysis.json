@@ -1,0 +1,148 @@
+{
+  "timestamp": "2025-11-10T09:48:34.235Z",
+  "analysis": {
+    "totalMapServers": 42,
+    "successfulDownloads": 36,
+    "failedDownloads": 13,
+    "existingFiles": 38
+  },
+  "byCategory": {
+    "Energi Terbarukan": {
+      "totalMapServers": 11,
+      "successful": 6,
+      "failed": 5,
+      "existingFiles": 8
+    },
+    "Mineral & Batubara": {
+      "totalMapServers": 7,
+      "successful": 4,
+      "failed": 4,
+      "existingFiles": 4
+    },
+    "Minyak & Gas Bumi": {
+      "totalMapServers": 13,
+      "successful": 12,
+      "failed": 1,
+      "existingFiles": 12
+    },
+    "Ketenagalistrikan": {
+      "totalMapServers": 9,
+      "successful": 8,
+      "failed": 1,
+      "existingFiles": 8
+    },
+    "Batas Wilayah": {
+      "totalMapServers": 2,
+      "successful": 6,
+      "failed": 2,
+      "existingFiles": 6
+    }
+  },
+  "failureReasons": [
+    {
+      "reason": "No layers found",
+      "count": 6,
+      "items": [
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer",
+          "category": "Energi Terbarukan"
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer",
+          "category": "Mineral & Batubara"
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer",
+          "category": "Mineral & Batubara"
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer",
+          "category": "Mineral & Batubara"
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer",
+          "category": "Mineral & Batubara"
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer",
+          "category": "Minyak & Gas Bumi"
+        }
+      ]
+    },
+    {
+      "reason": "Download timeout",
+      "count": 5,
+      "items": [
+        {
+          "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer",
+          "category": "Energi Terbarukan",
+          "layerName": "Potensi Surya di Lahan Permukiman TanahTerbuka Savana",
+          "layerId": 0
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer",
+          "category": "Energi Terbarukan",
+          "layerName": "Potensi Biogas",
+          "layerId": 0
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer",
+          "category": "Ketenagalistrikan",
+          "layerName": "Rasio Elektrifikasi Tahun 2024",
+          "layerId": 0
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+          "category": "Batas Wilayah",
+          "layerName": "Batas Administrasi Provinsi",
+          "layerId": 0
+        },
+        {
+          "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+          "category": "Batas Wilayah",
+          "layerName": "Batas Administrasi Kabupaten/Kota",
+          "layerId": 1
+        }
+      ]
+    },
+    {
+      "reason": "read ETIMEDOUT",
+      "count": 1,
+      "items": [
+        {
+          "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer",
+          "category": "Energi Terbarukan",
+          "layerName": "Potensi_Angin",
+          "layerId": 0
+        }
+      ]
+    },
+    {
+      "reason": "getaddrinfo ENOTFOUND geoportal.esdm.go.id",
+      "count": 1,
+      "items": [
+        {
+          "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer",
+          "category": "Energi Terbarukan"
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "issue": "No layers found",
+      "count": 6,
+      "recommendation": "These MapServers appear to be empty or not properly configured. Check the ESDM geoportal directly to verify if these services have been deprecated or moved."
+    },
+    {
+      "issue": "Download timeout",
+      "count": 5,
+      "recommendation": "These layers are too large or the server is slow. Use the retry_downloads.js script with extended timeout (5 minutes) to download these files."
+    },
+    {
+      "issue": "Network errors",
+      "count": 2,
+      "recommendation": "Network connectivity issues. Retry downloading these files when network connection is stable."
+    }
+  ]
+}

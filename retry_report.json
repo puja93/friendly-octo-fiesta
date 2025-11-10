@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-11-10T10:59:10.222Z",
+  "totalRetries": 7,
+  "successCount": 0,
+  "failureCount": 7,
+  "successful": [],
+  "failed": [
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer",
+      "category": "Energi Terbarukan",
+      "layerId": 0,
+      "layerName": "Potensi Surya di Lahan Permukiman TanahTerbuka Savana",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer",
+      "category": "Energi Terbarukan",
+      "layerId": 0,
+      "layerName": "Potensi Biogas",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer",
+      "category": "Energi Terbarukan",
+      "layerId": 0,
+      "layerName": "Potensi_Angin",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer",
+      "category": "Energi Terbarukan",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer",
+      "category": "Ketenagalistrikan",
+      "layerId": 0,
+      "layerName": "Rasio Elektrifikasi Tahun 2024",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "category": "Batas Wilayah",
+      "layerId": 0,
+      "layerName": "Batas Administrasi Provinsi",
+      "error": "Request failed with status code 403"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "category": "Batas Wilayah",
+      "layerId": 1,
+      "layerName": "Batas Administrasi Kabupaten/Kota",
+      "error": "Request failed with status code 403"
+    }
+  ]
+}
