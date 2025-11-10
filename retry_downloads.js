@@ -58,7 +58,7 @@ const results = {
 };
 
 // Create data directories
-const dataDir = '/Users/pujaromulus/Code/esdmap/data';
+const dataDir = path.join(__dirname, 'data');
 const categoryFolders = {
   'Energi Terbarukan': 'energi_terbarukan',
   'Ketenagalistrikan': 'ketenagalistrikan',
@@ -210,7 +210,7 @@ async function processRetries() {
   }
 
   // Save retry report
-  const reportPath = '/Users/pujaromulus/Code/esdmap/retry_report.json';
+  const reportPath = path.join(__dirname, 'retry_report.json');
   fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
 
   console.log('\n=== Retry Download Summary ===');

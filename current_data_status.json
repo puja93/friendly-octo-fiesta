@@ -1,0 +1,253 @@
+{
+  "timestamp": "2025-11-10T11:00:21.611Z",
+  "summary": {
+    "totalMapServers": 42,
+    "totalFiles": 38,
+    "totalSizeMB": "65.31",
+    "stillMissing": 11
+  },
+  "filesByCategory": {
+    "Energi Terbarukan": {
+      "count": 8,
+      "files": [
+        {
+          "name": "blk_a_potensi_angin_potensi_angin_layer0.geojson",
+          "sizeMB": "5.10"
+        },
+        {
+          "name": "blk_a_potensi_surya_di_lahan_permukiman_tanah_terbuka_savana_potensi_surya_di_lahan_permukiman_tanahterbuka_savana_layer0.geojson",
+          "sizeMB": "3.45"
+        },
+        {
+          "name": "blk_a_potensi_energi_arus_laut_indonesia_potensi_energi_arus_laut_indonesia_layer0.geojson",
+          "sizeMB": "0.01"
+        },
+        {
+          "name": "blk_a_potensi_hidro_potensi_hidro_layer0.geojson",
+          "sizeMB": "1.12"
+        },
+        {
+          "name": "blk_a_potensi_plts_terapung_potensi_plts_terapung_layer0.geojson",
+          "sizeMB": "0.29"
+        },
+        {
+          "name": "dpp_wilayah_kerja_panas_bumi_wilayah_kerja_panas_bumi_layer0.geojson",
+          "sizeMB": "0.07"
+        },
+        {
+          "name": "dpp_wilayah_penugasan_survei_pendahuluan_dan_eksplorasi_wilayah_penugasan_survei_pendahuluan_dan_eksplorasi_layer0.geojson",
+          "sizeMB": "0.02"
+        },
+        {
+          "name": "dpp_wilayah_penugasan_survei_pendahuluan_wilayah_penugasan_survei_pendahuluan_layer0.geojson",
+          "sizeMB": "0.01"
+        }
+      ]
+    },
+    "Mineral & Batubara": {
+      "count": 4,
+      "files": [
+        {
+          "name": "blk_a_mineral_laut_lokasi_mineral_laut_layer0.geojson",
+          "sizeMB": "0.01"
+        },
+        {
+          "name": "blk_a_mineral_laut_sebaran_mineral_laut_layer1.geojson",
+          "sizeMB": "0.38"
+        },
+        {
+          "name": "pusat_wilayahpertambangan_wilayah_pertambangan_layer0.geojson",
+          "sizeMB": "25.52"
+        },
+        {
+          "name": "pusat_wiup_publish_wiup_layer0.geojson",
+          "sizeMB": "0.18"
+        }
+      ]
+    },
+    "Minyak & Gas Bumi": {
+      "count": 12,
+      "files": [
+        {
+          "name": "dmbs_infrastruktur_pipa_transmisi_gas_bumi_infrastruktur_pipa_transmisi_gas_bumi_layer0.geojson",
+          "sizeMB": "4.32"
+        },
+        {
+          "name": "dmbs_jaringan_gas_rumah_tangga_jaringan_gas_rumah_tangga_layer0.geojson",
+          "sizeMB": "16.23"
+        },
+        {
+          "name": "dmep_cadangan_migas_cadangan_migas_layer0.geojson",
+          "sizeMB": "0.75"
+        },
+        {
+          "name": "dmep_kilang_lng_hulu_kilang_gas_lng_hulu_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmew_wilayah_kerja_migas_konvensional_wilayah_kerja_migas_konvensional_layer0.geojson",
+          "sizeMB": "1.13"
+        },
+        {
+          "name": "dmew_wilayah_kerja_migas_non_konvensional_wilayah_kerja_migas_non_konvensional_layer0.geojson",
+          "sizeMB": "0.06"
+        },
+        {
+          "name": "dmoo_kilang_lng_hilir_kilang_lng_hilir_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmoo_kilang_lpg_hilir_kilang_lpg_hilir_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmoo_kilang_minyak_kilang_minyak_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmos_terminal_cng_terminal_cng_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmos_terminal_lng_terminal_lng_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dmos_terminal_lpg_terminal_lpg_layer0.geojson",
+          "sizeMB": "0.00"
+        }
+      ]
+    },
+    "Ketenagalistrikan": {
+      "count": 8,
+      "files": [
+        {
+          "name": "dap_pembangkit_offgrid_apbn_pembangkit_offgrid_apbn_layer0.geojson",
+          "sizeMB": "0.30"
+        },
+        {
+          "name": "dap_pltm_pltmh_under_10_mega_watt_pltm_pltmh_10mw_layer0.geojson",
+          "sizeMB": "0.07"
+        },
+        {
+          "name": "dap_plts_under_10_mega_watt_plts_10mw_layer0.geojson",
+          "sizeMB": "0.00"
+        },
+        {
+          "name": "dbp_pembangkit_berbasis_bioenergi_pembangkit_berbasis_bioenergi_layer0.geojson",
+          "sizeMB": "0.05"
+        },
+        {
+          "name": "dpp_pltp_pltp_layer0.geojson",
+          "sizeMB": "0.01"
+        },
+        {
+          "name": "sdl1_jaringan_listrik_jaringan_listrik_layer0.geojson",
+          "sizeMB": "4.09"
+        },
+        {
+          "name": "sdl1_sebaran_lokasi_gardu_induk_sebaran_lokasi_gardu_induk_layer0.geojson",
+          "sizeMB": "0.79"
+        },
+        {
+          "name": "sdl1_sebaran_pembangkit_listrik_sebaran_pembangkit_listrik_layer0.geojson",
+          "sizeMB": "0.46"
+        }
+      ]
+    },
+    "Batas Wilayah": {
+      "count": 6,
+      "files": [
+        {
+          "name": "sjn_batas_laut_indonesia_peta_batas_landas_kontinen_layer0.geojson",
+          "sizeMB": "0.19"
+        },
+        {
+          "name": "sjn_batas_laut_indonesia_peta_batas_laut_mou_fisheries_layer1.geojson",
+          "sizeMB": "0.01"
+        },
+        {
+          "name": "sjn_batas_laut_indonesia_peta_batas_teritorial_layer2.geojson",
+          "sizeMB": "0.11"
+        },
+        {
+          "name": "sjn_batas_laut_indonesia_peta_batas_zee_layer3.geojson",
+          "sizeMB": "0.38"
+        },
+        {
+          "name": "sjn_batas_laut_indonesia_peta_garis_pangkal_layer4.geojson",
+          "sizeMB": "0.05"
+        },
+        {
+          "name": "sjn_batas_laut_indonesia_peta_zona_tambahan_layer5.geojson",
+          "sizeMB": "0.16"
+        }
+      ]
+    }
+  },
+  "stillMissingDetails": [
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer",
+      "category": "Energi Terbarukan",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer",
+      "category": "Energi Terbarukan",
+      "layerId": 0,
+      "layerName": "Potensi Biogas",
+      "error": "Download timeout"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer",
+      "category": "Energi Terbarukan",
+      "error": "getaddrinfo ENOTFOUND geoportal.esdm.go.id"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer",
+      "category": "Mineral & Batubara",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer",
+      "category": "Minyak & Gas Bumi",
+      "error": "No layers found"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer",
+      "category": "Ketenagalistrikan",
+      "layerId": 0,
+      "layerName": "Rasio Elektrifikasi Tahun 2024",
+      "error": "Download timeout"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "category": "Batas Wilayah",
+      "layerId": 0,
+      "layerName": "Batas Administrasi Provinsi",
+      "error": "Download timeout"
+    },
+    {
+      "url": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "category": "Batas Wilayah",
+      "layerId": 1,
+      "layerName": "Batas Administrasi Kabupaten/Kota",
+      "error": "Download timeout"
+    }
+  ]
+}
