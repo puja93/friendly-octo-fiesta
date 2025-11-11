@@ -250,3 +250,107 @@ header h1 {
         padding: 14px;
     }
 }
+
+/* Layer Controls */
+.layer-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 400;
+    backdrop-filter: blur(4px);
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    min-width: 280px;
+}
+
+.layer-controls-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #2c3e50;
+    border-bottom: 2px solid #e8eef5;
+    padding-bottom: 10px;
+    letter-spacing: -0.3px;
+}
+
+.layer-category {
+    margin-bottom: 20px;
+}
+
+.layer-category:last-child {
+    margin-bottom: 0;
+}
+
+.layer-category-title {
+    font-weight: 600;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.layer-item {
+    margin-bottom: 8px;
+}
+
+.layer-item label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+}
+
+.layer-item label:hover {
+    color: #3d4a7a;
+}
+
+.layer-item input[type="checkbox"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.layer-item .layer-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Scrollbar styling for layer controls */
+.layer-controls::-webkit-scrollbar {
+    width: 6px;
+}
+
+.layer-controls::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.layer-controls::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.layer-controls::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .layer-controls {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-height: 250px;
+        min-width: auto;
+    }
+}

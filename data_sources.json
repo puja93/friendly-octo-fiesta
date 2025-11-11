@@ -1,0 +1,313 @@
+{
+  "dataSources": [
+    {
+      "category": "Energi Terbarukan",
+      "name": "Wilayah Penugasan Survei Pendahuluan dan Eksplorasi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan_dan_Eksplorasi/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Wilayah Penugasan Survei Pendahuluan",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Penugasan_Survei_Pendahuluan/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Wilayah Kerja Panas Bumi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/Wilayah_Kerja_Panas_Bumi/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Sumber Daya dan Cadangan Panas Bumi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Panas_Bumi/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "not_available"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Surya di Lahan Permukiman Tanah Terbuka Savana",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Surya_di_Lahan_Permukiman_Tanah_Terbuka_Savana/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Energi Arus Laut Indonesia",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Energi_Arus_Laut_Indonesia/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Biogas",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biogas/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Hidro",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Hidro/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi PLTS Terapung",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_PLTS_Terapung/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Angin",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Potensi_Angin/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Energi Terbarukan",
+      "name": "Potensi Biomassa",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Potensi_Biomassa/MapServer",
+      "targetFolder": "data/energi_terbarukan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Potensi Sumber Daya dan Cadangan Mineral Logam",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Sumber_Daya_dan_Cadangan_Mineral_Logam/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "not_available"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Potensi Batubara",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Batubara/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "not_available"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Potensi Mineral Bukan Logam dan Batuan",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Mineral_Bukan_Logam_dan_Batuan/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "not_available"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Mineral Laut",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis5/rest/services/BLK_A/Mineral_Laut/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "downloaded",
+      "note": "Multiple layers: lokasi and sebaran"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Potensi Gas Metana Batubara",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGD_TU/Potensi_Gas_Metana_Batubara/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "not_available"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "Wilayah Pertambangan",
+      "sourceUrl": "https://geoportal.esdm.go.id/monaresia/sharing/servers/1d19dc2faa1a42ebacbe9d76d70ac110/rest/services/Pusat/WilayahPertambangan/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "downloaded"
+    },
+    {
+      "category": "Mineral & Batubara",
+      "name": "WIUP - Wilayah Izin Usaha Pertambangan",
+      "sourceUrl": "https://geoportal.esdm.go.id/monaresia/sharing/servers/48852a855c014a63acfd78bf06c2689a/rest/services/Pusat/WIUP_Publish/MapServer",
+      "targetFolder": "data/mineral_batubara",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Wilayah Kerja Migas Non Konvensional",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Non_Konvensional/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Wilayah Kerja Migas Konvensional",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMEW/Wilayah_Kerja_Migas_Konvensional/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Kilang Minyak",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_Minyak/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Infrastruktur Pipa Transmisi Gas Bumi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Infrastruktur_Pipa_Transmisi_Gas_Bumi/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Cadangan Migas",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Cadangan_Migas/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Jaringan Gas Rumah Tangga",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMBS/Jaringan_Gas_Rumah_Tangga/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Cekungan Sedimen",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis4/rest/services/BGS_MG/Cekungan_Sedimen/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "not_available"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Kilang LNG Hilir",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LNG_Hilir/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Kilang LNG Hulu",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMEP/Kilang_LNG_Hulu/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Terminal LNG",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LNG/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Terminal CNG",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_CNG/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Kilang LPG Hilir",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOO/Kilang_LPG__Hilir_/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Minyak & Gas Bumi",
+      "name": "Terminal LPG",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis3/rest/services/DMOS/Terminal_LPG/MapServer",
+      "targetFolder": "data/minyak_gas_bumi",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Jaringan Listrik",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Jaringan_Listrik/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Sebaran Pembangkit Listrik",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Pembangkit_Listrik/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "PLTP - Pembangkit Listrik Tenaga Panas Bumi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DPP/PLTP/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Sebaran Lokasi Gardu Induk",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Sebaran_Lokasi_Gardu_Induk/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "PLTS Under 10 Mega Watt",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTS_Under_10_Mega_Watt/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Rasio Elektrifikasi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/SDL1/Rasio_Elektrifikasi/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Pembangkit Berbasis Bioenergi",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DBP/Pembangkit_Berbasis_Bioenergi/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "Pembangkit Offgrid APBN",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/Pembangkit_Offgrid_APBN/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Ketenagalistrikan",
+      "name": "PLTM PLTMH Under 10 Mega Watt",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis2/rest/services/DAP/PLTM_PLTMH_Under_10_Mega_Watt/MapServer",
+      "targetFolder": "data/ketenagalistrikan",
+      "status": "downloaded"
+    },
+    {
+      "category": "Batas Wilayah",
+      "name": "Batas Administrasi KSP Area",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Administrasi_KSP_Area/MapServer",
+      "targetFolder": "data/batas_wilayah",
+      "status": "downloaded",
+      "note": "Multiple layers: provinsi (layer 0) and kabupaten/kota (layer 1)"
+    },
+    {
+      "category": "Batas Wilayah",
+      "name": "Batas Laut Indonesia",
+      "sourceUrl": "https://geoportal.esdm.go.id/gis1/rest/services/SJN/Batas_Laut_Indonesia/MapServer",
+      "targetFolder": "data/batas_wilayah",
+      "status": "downloaded",
+      "note": "Multiple layers: landas kontinen, mou fisheries, teritorial, zee, garis pangkal, zona tambahan"
+    }
+  ],
+  "summary": {
+    "totalSources": 42,
+    "downloaded": 37,
+    "notAvailable": 5,
+    "categories": {
+      "Energi Terbarukan": 11,
+      "Mineral & Batubara": 7,
+      "Minyak & Gas Bumi": 13,
+      "Ketenagalistrikan": 9,
+      "Batas Wilayah": 2
+    }
+  }
+}
